@@ -48,7 +48,7 @@ namespace MarkDownSharpEditor
 		private Encoding _EditingFileEncoding = Encoding.UTF8;             //編集中MDファイルの文字エンコーディング ( Character encoding of MD file editing )
 
 		private bool _fConstraintChange = true;	                           //更新状態の抑制 ( Constraint changing flag )
-		private ICollection<MarkdownSyntaxKeyword> _MarkdownSyntaxKeywordAarray;
+		private List<MarkdownSyntaxKeyword> _MarkdownSyntaxKeywordAarray = new List<MarkdownSyntaxKeyword>();  // Array of MarkdownSyntaxKeyword Class
 		//-----------------------------------
 		// コンストラクタ ( Constructor )
 		//-----------------------------------
@@ -1836,9 +1836,6 @@ namespace MarkDownSharpEditor
 			return new string(destChars);
 		}
 
-
-
-
 		//======================================================================
 		#region ブラウザーのツールバーメニュー ( Toolbar on browser )
 		//======================================================================
@@ -2561,7 +2558,6 @@ namespace MarkDownSharpEditor
 			//richTextBoxの書式を変えても「変更」となるので元のステータスへ戻す
 			richTextBox1.Modified = fModify;
 		}
-
 		//-----------------------------------
 		//「オプション」メニュー
 		// "Option" menu
@@ -2572,7 +2568,7 @@ namespace MarkDownSharpEditor
 			frm3.ShowDialog();
 			frm3.Dispose();
 
-			_MarkdownSyntaxKeywordAarray = MarkdownSyntaxKeyword.CreateKeywordList();	 //キーワードリストの更新
+			_MarkdownSyntaxKeywordAarray = MarkdownSyntaxKeyword.CreateKeywordList(); //キーワードリストの更新
 			if (backgroundWorker2.IsBusy == false)
 			{
 				//SyntaxHightlighter on BackgroundWorker
