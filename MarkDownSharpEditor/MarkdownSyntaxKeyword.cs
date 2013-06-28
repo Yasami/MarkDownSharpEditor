@@ -61,7 +61,6 @@ namespace MarkDownSharpEditor
 		{
 			return BackColor.ToArgb();
 		}
-
 		public static List<MarkdownSyntaxKeyword> CreateKeywordList()
 		{
 			var settings = MarkDownSharpEditor.AppSettings.Instance;
