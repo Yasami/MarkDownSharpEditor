@@ -1,17 +1,16 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Resources;
 
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle("MarkDown#Editor")]
-[assembly: AssemblyDescription("Markdown記法に対応したテキストエディター")]
+[assembly: AssemblyTitle("MarkDownSharpEditorTest")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MarkDown#Editor")]
-[assembly: AssemblyCopyright("Copyright © 2012-2013 M.Hibara, All rights reserved.")]
+[assembly: AssemblyProduct("MarkDownSharpEditorTest")]
+[assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +20,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // 次の GUID は、このプロジェクトが COM に公開される場合の、typelib の ID です
-[assembly: Guid("848843e2-e023-447a-982d-058cb2c9972e")]
+[assembly: Guid("28e075bc-7efa-49c5-b2f5-acbf0dfb0bf3")]
 
 // アセンブリのバージョン情報は、以下の 4 つの値で構成されています:
 //
@@ -33,9 +32,5 @@ using System.Resources;
 // すべての値を指定するか、下のように '*' を使ってビルドおよびリビジョン番号を 
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.2.2.0")]
-[assembly: AssemblyFileVersion("1.2.2.0")]
-[assembly: NeutralResourcesLanguageAttribute("en")]
-
-// Specify a friend assembly for unit testing
-[assembly: InternalsVisibleTo("MarkDownSharpEditorTest")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
